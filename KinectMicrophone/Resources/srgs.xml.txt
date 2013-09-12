@@ -1,0 +1,137 @@
+<grammar version="1.0" xml:lang="ru" root="topLevel"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="topLevel">
+    <one-of>
+      <item><ruleref uri="#управление_светом" /></item>
+	  <item><ruleref uri="#запрос_региорна" /></item>
+	</one-of>
+  </rule>
+
+  <rule id="запрос_региорна">
+    <item> что за регион </item>  
+	<ruleref uri="#числа_00_999" />
+  </rule>
+  
+  <rule id="числа_00_999">
+    <item repeat="2-3">
+      <one-of>
+	    <item> ноль </item> 
+	    <item> один </item> 
+	    <item> два </item> 
+	    <item> три </item> 
+	    <item> четыре </item> 
+	    <item> п€ть </item> 
+  	    <item> шесть </item> 
+	    <item> семь </item> 
+  	    <item> восемь </item> 
+	    <item> дев€ть </item> 
+      </one-of>	
+    </item>
+  </rule>
+  
+  <rule id="управление_светом">
+    <one-of>
+	  <item><ruleref uri="#включить_свет" /></item>
+      <item><ruleref uri="#выключить_свет" /></item>
+	</one-of>
+	<item repeat="0-1">
+	  <item> через </item>
+	  <item><ruleref uri="#число" /></item>
+	  <item><ruleref uri="#мера_времени" /></item>
+	</item>
+  </rule>
+  
+  <rule id="мера_времени">
+    <one-of>
+      <item> секунда </item>
+	  <item> секунд </item>
+      <item> минута </item>
+	  <item> минут </item>
+	  <item> час </item>
+	  <item> часа </item>
+	  <item> часов </item>
+      <item> недел€ </item>
+	  <item> недели </item>
+	  <item> недель </item>
+	  <item> мес€ц </item>
+	  <item> мес€ца </item>
+	  <item> мес€цев </item>
+	  <item> год </item>
+	  <item> года </item>
+	  <item> лет </item>
+    </one-of>
+  </rule>
+  
+  <rule id="число">
+    <one-of>
+      <item> один </item>
+	  <item> одну </item>
+      <item> два </item>
+	  <item> двe </item>
+	  <item> три </item>
+      <item> четыре </item>
+	  <item> п€ть </item>
+	  <item> шесть </item>
+	  <item> семь </item>
+	  <item> восемь </item>
+	  <item> дев€ть </item>
+	  <item> дес€ть </item>
+    </one-of>
+  </rule>
+  
+  <rule id="включить_свет">
+    <ruleref uri="#включить" />
+    <ruleref uri="#свет" />
+  </rule>  
+  
+  <rule id="выключить_свет">
+    <ruleref uri="#выключить" />
+    <ruleref uri="#свет" />
+  </rule>    
+
+  <rule id="выключить">
+    <one-of>
+      <item> выключить </item>
+      <item> вырубить </item>
+	  <item> отключить </item>
+      <item> деактивировать </item>
+    </one-of>
+  </rule>  
+  
+  <rule id="включить">
+    <one-of>
+      <item> включить </item>
+      <item> врубить </item>
+      <item> активировать </item>
+    </one-of>
+  </rule>
+  
+  <rule id="свет">
+    <one-of>
+	  <item> фары </item>
+      <item> ближний свет </item>
+      <item> дальний свет </item>
+      <item> габариты </item>
+	  <item><ruleref uri="#противотуманки" /></item>
+	  <item> весь свет </item>
+    </one-of>
+  </rule>  
+  
+  <rule id="противотуманки">
+    <item repeat="0-2"><ruleref uri="#задние_или_передние" /></item>
+	<one-of>
+      <item> противотуманки </item>
+      <item> противотуманные фары </item>
+    </one-of>
+  </rule>    
+  
+  <rule id="задние_или_передние">
+    <one-of>
+	  <item> задние </item>
+      <item> передние </item>
+	  <item> все </item>	  
+    </one-of>
+  </rule>    
+
+</grammar>

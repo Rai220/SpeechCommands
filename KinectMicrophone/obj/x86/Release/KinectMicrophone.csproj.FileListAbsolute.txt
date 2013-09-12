@@ -1,0 +1,12 @@
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\bin\x86\Release\KinectMicrophone.exe.config
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\bin\x86\Release\KinectMicrophone.exe
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\bin\x86\Release\KinectMicrophone.pdb
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\bin\x86\Release\InputSimulator.dll
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\bin\x86\Release\InputSimulator.pdb
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\bin\x86\Release\InputSimulator.xml
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\obj\x86\Release\KinectMicrophone.csprojResolveAssemblyReference.cache
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\obj\x86\Release\KinectMicrophone.mainForm.resources
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\obj\x86\Release\KinectMicrophone.Properties.Resources.resources
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\obj\x86\Release\KinectMicrophone.csproj.GenerateResource.Cache
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\obj\x86\Release\KinectMicrophone.exe
+C:\Dropbox\chatterbox\KinectMicrophone\KinectMicrophone\obj\x86\Release\KinectMicrophone.pdb

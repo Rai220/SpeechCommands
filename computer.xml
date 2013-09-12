@@ -1,0 +1,11 @@
+﻿<grammar version="1.0" xml:lang="ru" root="topLevel"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="topLevel">
+	<one-of>
+	  <item>компьютер</item>
+      <item>компьютер проснись</item>
+	</one-of>  
+  </rule>
+  
+</grammar>
